@@ -1,14 +1,17 @@
-function Gallery ({ data }){
+
+
+function Gallery ({ }){
     const display =  data.map(pokemon => {
        return(
-           <li key={pokemon.name}>{pokemon.name}</li>
+         <li key={pokemon.name}>{pokemon.name}</li>
        )
      })
-     return(
+     
+      return(
         <div>
-           {display}
+          {display}
         </div>
-     )
+       )
     }
    
     export default Gallery
