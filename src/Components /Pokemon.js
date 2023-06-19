@@ -12,7 +12,7 @@ function Pokemon() {
         console.log(data)
         setPokemon(data)
     }
-    if (name){
+    if (name){ 
         fetchData()
     }
   }, [name])
@@ -24,7 +24,10 @@ const  display = pokemon && (
  </div>
 )
     return (
-        {display}
+        <>
+         {display}
+        </>
+    
     )
 }
 
